@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Questrial&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +38,7 @@ body {
     transition: opacity 0.5s ease;
 }
 
-.preload svg{
+.preload img{
     width: 80px;
     height: 80px;
     animation: preloading 0.6s infinite ;
@@ -343,6 +345,10 @@ background: linear-gradient(to right, #0b8793, #360033); */
 
 }
 
+.projects .btn{
+    color: white; font-size: 18px; font-weight:400
+}
+
 .card-img-overlay {
 
     background: linear-gradient(to right, #c31432, #240b36);
@@ -498,6 +504,41 @@ color: #0083B0;
 }
 
 
+.form-main {
+    
+    margin-top: 9vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+    z-index: 10;
+}
+
+.cheading{
+  padding: 5% 5%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
+.form-detail{
+    width: 70%;
+}
+
+.form-detail .btn{
+    width: 50%;
+    text-align: center;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 90px;
+    margin-top: 20px;
+}
+
 
 @media (min-width: 576px) {
     .card-columns {
@@ -516,6 +557,9 @@ color: #0083B0;
         column-count: 3;
     }
 }
+
+
+
 
 
 @media screen and (max-width: 768px) {
@@ -542,7 +586,6 @@ color: #0083B0;
     .title {
         font-size: 30px;
     }
-
 
     .title::before {
         height: 20px;
@@ -585,6 +628,18 @@ color: #0083B0;
     
     }
 
+    .card-img-overlay h3 {
+        font-size: 25px;
+    }
+
+    .projects{
+        font-size: 15px;
+    }
+
+    .projects .btn{
+        font-size: 15px;
+    }
+
     .contact-detail div div {
         font-size: 16px;
         margin-top: 25px;
@@ -615,4 +670,86 @@ color: #0083B0;
         height: 43px;
         width: 43px;
     }
+
+    .cheading{
+        padding: 1% 1%;
+    }
+
+    .cheading h1{
+        font-size: 26px;
+
+    }
+
+    .form-main {
+        font-size: 20px;
+    }
+
+    
 }
+
+@media screen and (max-height: 667px) {
+    .homepage{
+        min-height: 667px;
+        max-height: 667px;
+    }
+    .main{
+        min-height: 620px;
+        max-height: 640px;
+    }
+
+    .homepage-img img {
+        height: 156px;
+    }
+
+    .avatar img {
+        width: 120px;
+
+    }
+
+    .main {
+        font-size: 18px;
+    }
+
+    .heading h1 {
+        font-size: 28px;
+    }
+
+
+    .title {
+        font-size: 24px;
+    }
+
+    .title::before {
+        height: 16px;
+        width: 16px;
+        border-top: 2px solid #00B4DB;
+        border-left: 2px solid #00B4DB;
+        margin: 5px;
+    }
+
+
+    .title::after {
+        height: 16px;
+        width: 16px;
+        border-bottom: 2px solid #00B4DB;
+        border-right: 2px solid #00B4DB;
+        margin: 5px;
+    }
+
+    .icon-circle i {
+        position: absolute;
+        top: 30%;
+       
+    }
+    
+  }
+
+
+  /* @media (prefers-dark-interface) { body {
+    background-color: black;
+    color: white;
+  } root: {   --text-color: Azure;   --back-color: DarkBlue;  } } */
+
+
+
+ 
