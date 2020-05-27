@@ -16,6 +16,47 @@ html{
 body {
     font-family: Questrial, sans-serif;
     color: #141c3a;
+    overflow: hidden;
+}
+
+.preload {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: #00B4DB;
+    background: linear-gradient(to right, #0083B0, #00B4DB);
+    color: white;
+    font-size: 2rem;
+    z-index: 99;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.preload svg{
+    width: 80px;
+    height: 80px;
+    animation: preloading 0.6s infinite ;
+}
+
+.preload p{
+    position: absolute;
+    top:60%;
+    transform: translateY(-60%);
+}
+
+
+@-webkit-keyframes preloading{
+    from {transform: rotateY(20deg); }
+    to { transform: rotateY(-40deg); }
+}
+
+.preload-finish{
+    opacity: 0;
+    pointer-events: none;
 }
 
 h1,
@@ -31,8 +72,6 @@ h6 {
 
 
 .homepage {
-    /* background: #00B4DB; 
-    background: linear-gradient(to right, #0083B0, #00B4DB); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
     text-decoration: none;
     list-style: none;
     outline: none;
@@ -117,11 +156,29 @@ h6 {
 }
 
 .heading h1 {
+    position: relative;
     font-weight: 700;
     font-size: 48px;
     margin-top: 20px;
 }
 
+.heading h1::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 3px;
+    background-color: black;
+    bottom: 0;
+    margin-bottom: 5px;
+    margin-left: 6px;
+    animation: blink 0.5s reverse infinite;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes blink {
+    0% {opacity: 0; }
+    100% { opacity:1; }
+  }
 
 .avatar {
     position: absolute;
@@ -466,6 +523,9 @@ color: #0083B0;
         font-size: 32px;
     }
 
+    .heading h1::after{
+        height: 30px;
+    }
 
     .homepage-img img {
 
@@ -535,9 +595,24 @@ color: #0083B0;
         font-size: 16px;
     }
 
+    .contact-detail h2{
+        font-size: 27px;
+    }
+
     .saying {
         padding: 5% 18%;
     }
 
+    .motive h4{
+        font-size: 20px;
+    }
 
+    .icon-circle i {
+        font-size: 17px;
+    }
+
+    .icon-circle {
+        height: 43px;
+        width: 43px;
+    }
 }
