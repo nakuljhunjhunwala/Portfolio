@@ -504,41 +504,6 @@ color: #0083B0;
 }
 
 
-.form-main {
-    
-    margin-top: 9vh;
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-    z-index: 10;
-}
-
-.cheading{
-  padding: 5% 5%;
-  right: 0;
-  left: 0;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  max-width: 100%;
-}
-
-.form-detail{
-    width: 70%;
-}
-
-.form-detail .btn{
-    width: 50%;
-    text-align: center;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 90px;
-    margin-top: 20px;
-}
-
 
 @media (min-width: 576px) {
     .card-columns {
@@ -671,18 +636,6 @@ color: #0083B0;
         width: 43px;
     }
 
-    .cheading{
-        padding: 1% 1%;
-    }
-
-    .cheading h1{
-        font-size: 26px;
-
-    }
-
-    .form-main {
-        font-size: 20px;
-    }
 
     
 }
