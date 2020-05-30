@@ -47,7 +47,7 @@ d:[{value: toggle ? moonPath : sunPath}]
 }, "-=700")
 .add({
   targets: ".towhite",
-  color: toggle ? "#DCDCDC" : " rgb(0,0,0)"
+  color: toggle ? "#DCDCDC" : " rgb(25,25,25)"
 }, "-=700")
 .add({
   targets: ".contact-detail",
